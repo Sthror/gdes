@@ -19,17 +19,7 @@
   margin: 0;
   padding: 0;
 }
-.solution__step:before {
-  content: "";
-  display: block;
-  background: #8B99A5;
-  width: 7px;
-  height: 7px;
-  box-sizing: border-box;
-  flex: 0 0 auto;
-  border-radius: 50%;
-  margin-right: 12px;
-}
+
 .solution__thesis {
   font-size: 20px;
   line-height: 28px;
@@ -39,9 +29,7 @@
 .solution__step {
   box-sizing: border-box;
   color: #8B99A5;
-  margin: 0 0 12px;
-  display: flex;
-  align-items: baseline;
+  margin: 0 0 12px; 
 }
 @media (max-width: 1110px) {
   .solution__descr {

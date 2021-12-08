@@ -1,12 +1,15 @@
 /* tariffs */
 
+.tariffs{
+  padding-bottom: 145px;
+}
 .tariffs__title {
   margin-bottom: 70px;
 }
 .tariffs_table {
   color: #8B99A5;
   border-collapse: collapse;
-  margin-bottom: 70px;
+  margin-bottom: 50px;
   position: relative;
   min-width: 100%;
   width: max-content;
@@ -18,7 +21,7 @@
   display: block;
   right: 0;
   left: 0;
-  bottom: -50px;
+  bottom: -30px;
   height: 1px;
 }
 .tariffs_table th {
@@ -26,32 +29,39 @@
   line-height: 39px;
   text-align: left;
   color: #33333F;
+  padding-bottom: 25px;
+}
+.tariffs_table td{
+  padding: 5px;
 }
 .tariffs_table td:first-child {
   padding: 12px 0 12px 15px;
-  max-width: 345px;
+  max-width: 165px;
 }
 .tariffs_table tbody tr:nth-child(even) {
   background-color: #F3F4F6;
 }
 .tariffs__subtable {
-  margin-top: 78px;
+  margin-top: 95px;
   text-align: left;
+  margin-bottom: 45px;
 }
 .tariffs__example-item {
   display: flex;
   flex-direction: column;
-  flex: 0 0 calc(100% / 3);
+  flex: 0 0 calc(100% / 3 - 10px);
+
 }
 .tariffs__example-price {
   font-size: 48px;
-  line-height: 65px;
+  line-height: 63px;
   color: #1899F1;
 }
 .tariffs__example-base {
   font-size: 27px;
-  line-height: 39px;
+  line-height: 27px;
   color: #8B99A5;
+  margin-left: 7px;
 }
 .tariffs__example-note {
   display: block;
@@ -59,6 +69,7 @@
 }
 .tariffs__example {
   display: flex;
+  justify-content: space-between;
 }
 .tariffs__example-large {
   max-width: 300px;
@@ -67,6 +78,9 @@
   font-weight: bold;
   color: #33333F;
   display: block;
+}
+.tariffs__notes{
+  font-size: 18px;
 }
 @media (max-width: 1100px) {
   .tariffs__table-wrapper {
