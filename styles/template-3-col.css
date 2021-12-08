@@ -1,0 +1,53 @@
+/* template-3-col */
+.template-3-col__problems {
+  margin-bottom: 0;
+}
+.template-3-col__item{
+  margin: 0;
+}
+.template-3-col__list {
+  margin: 68px 0 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 65px 20px;
+}
+.template-3-col__list--advantage {
+  margin: 88px 0 0;
+  gap: 135px 20px;
+}
+
+.template-3-col__icon {
+  display: block;
+  margin: 0 auto 30px;
+}
+.template-3-col__list--advantage .template-3-col__icon{
+  margin: 0 auto 20px;
+}
+.template-3-col__note {
+  text-align: center;
+  color: #8B99A5;
+  padding: 0;
+}
+
+@media (max-width: 1100px) {
+  .template-3-col__subtitle{
+    margin-bottom: 32px;
+  }
+  .template-3-col__list{
+    margin-top: 0;
+    gap: 32px 12px;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .template-3-col__list{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .template-3-col__list--advantage{
+    grid-template-columns: repeat(1, 1fr);    
+  }
+}
+
+/* end template-3-col*/

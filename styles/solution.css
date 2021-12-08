@@ -1,0 +1,64 @@
+/* solution */
+
+.solution {
+  background: #0E0E15;
+}
+.solution__descr {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+}
+.solution__thesis,
+.solution__steps {
+  flex: 0 0 50%;
+  color: #fff;
+}
+.solution__steps {
+  list-style: none;
+  max-width: 440px;
+  margin: 0;
+  padding: 0;
+}
+.solution__step:before {
+  content: "";
+  display: block;
+  background: #8B99A5;
+  width: 7px;
+  height: 7px;
+  box-sizing: border-box;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  margin-right: 12px;
+}
+.solution__thesis {
+  font-size: 20px;
+  line-height: 28px;
+  padding-right: 10px;
+  box-sizing: border-box;
+}
+.solution__step {
+  box-sizing: border-box;
+  color: #8B99A5;
+  margin: 0 0 12px;
+  display: flex;
+  align-items: baseline;
+}
+@media (max-width: 1110px) {
+  .solution__descr {
+    flex-direction: column;
+    align-items: center;
+  }
+  .solution__thesis {
+    font-size: 18px;
+    line-height: 120%;
+    padding: 0;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .solution__step {
+    font-size: 14px;
+    line-height: 130%;
+  }
+}
+
+/* end solution  */

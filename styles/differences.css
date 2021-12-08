@@ -1,0 +1,128 @@
+/* differences */
+
+.differences {
+  background: #0E0E15;
+  color: #fff;
+  padding-top: 145px;
+}
+.differences__title {
+  max-width: 768px;
+  margin: 0 auto;
+}
+.differences__block {
+  margin-top: 76px;
+}
+.differences__counter {
+  font-weight: bold;
+  font-size: 54px;
+  line-height: 65px;
+  color: #1899F1;
+  display: block;
+  margin-bottom: 13px;
+}
+.differences__thesis {
+  font-size: 20px;
+  line-height: 28px;
+  color: #fff;
+  max-width: 240px;
+  display: block;
+}
+.differences__col-title {
+  font-size: 27px;
+  line-height: 39px;
+  color: #fff;
+  display: block;
+  margin-bottom: 40px;
+}
+.differences__col-title--2-col {
+  margin-bottom: 0;
+}
+.differences__col {
+  color: #8B99A5;
+  margin: 0;
+  flex: 0 0 calc(100% / 3);
+  box-sizing: border-box;
+  padding-right: 20px;
+}
+.differences__col:nth-child(3) {
+  padding-left: 10px;
+}
+.differences__list {
+  margin: 0;
+  padding-top: 25px;
+}
+.differences__item {
+  display: flex;
+  margin: 0 0 35px;
+  padding-bottom: 82px;
+}
+.differences__item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+.differences__item--2-col .differences__col:nth-child(2) {
+  width: 100%;
+  flex: 1 1 auto;
+  padding: 14px 10px 0;
+  font-size: 18px;
+  line-height: 26px;
+  display: flex;
+  flex-direction: column;
+}
+.differences__item:not(:last-child) {
+  border-bottom: 1px solid #DFE0E3;
+}
+.differences__notes {
+  display: block;
+  padding-top: 23px;
+  border-top: 1px solid #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+  max-width: 55%;
+  margin-top: 32px;
+}
+.differences__text {
+  margin-bottom: 22px;
+}
+@media (max-width: 1100px) {
+  .differences__block {
+    margin-top: 40px;
+  }
+  .differences__item {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 40px;
+  }
+  .differences__col {
+    text-align: center;
+    margin-bottom: 32px;
+  }
+  .differences__col:first-child {
+    width: 100%;
+    flex: 1 1 auto;
+  }
+  .differences__thesis {
+    width: auto;
+  }
+  .differences__counter {
+    font-size: 36px;
+    line-height: 120%;
+  }
+  .differences__col-title {
+    font-size: 18px;
+    line-height: 130%;
+    margin-bottom: 12px;
+  }
+  .differences__notes {
+    margin: 12px auto 0;
+    padding-top: 12px;
+  }
+  .differences__text {
+    margin-bottom: 32px;
+  }
+  .differences__list {
+    text-align: left;
+  }
+}
+
+/* end differences */

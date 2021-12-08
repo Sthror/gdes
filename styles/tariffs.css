@@ -1,0 +1,108 @@
+/* tariffs */
+
+.tariffs__title {
+  margin-bottom: 70px;
+}
+.tariffs_table {
+  color: #8B99A5;
+  border-collapse: collapse;
+  margin-bottom: 70px;
+  position: relative;
+  min-width: 100%;
+  width: max-content;
+}
+.tariffs_table::after {
+  content: "";
+  position: absolute;
+  background-color: #DFE0E3;
+  display: block;
+  right: 0;
+  left: 0;
+  bottom: -50px;
+  height: 1px;
+}
+.tariffs_table th {
+  font-size: 27px;
+  line-height: 39px;
+  text-align: left;
+  color: #33333F;
+}
+.tariffs_table td:first-child {
+  padding: 12px 0 12px 15px;
+  max-width: 345px;
+}
+.tariffs_table tbody tr:nth-child(even) {
+  background-color: #F3F4F6;
+}
+.tariffs__subtable {
+  margin-top: 78px;
+  text-align: left;
+}
+.tariffs__example-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 calc(100% / 3);
+}
+.tariffs__example-price {
+  font-size: 48px;
+  line-height: 65px;
+  color: #1899F1;
+}
+.tariffs__example-base {
+  font-size: 27px;
+  line-height: 39px;
+  color: #8B99A5;
+}
+.tariffs__example-note {
+  display: block;
+  color: #8B99A5;
+}
+.tariffs__example {
+  display: flex;
+}
+.tariffs__example-large {
+  max-width: 300px;
+}
+.tariffs__price-th{
+  font-weight: bold;
+  color: #33333F;
+  display: block;
+}
+@media (max-width: 1100px) {
+  .tariffs__table-wrapper {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+  .tariffs__example {
+    flex-direction: column;
+    align-items: center;
+  }
+  .tariffs__example-item {
+    flex: 0 0 100%;
+    margin-bottom: 24px;
+  }
+  .tariffs__subtable {
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 24px;
+  }
+  .tariffs__example-price {
+    font-size: 36px;
+    line-height: 120%;
+  }
+  .tariffs__example-base {
+    font-size: 24px;
+    line-height: 120%;
+  }
+  .tariffs__example-large {
+    max-width: none;
+    text-align: center;
+  }
+  .tariffs_table td:first-child {
+    max-width: 200px;
+  }
+}
+
+/* end tariffs */
