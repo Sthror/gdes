@@ -50,6 +50,7 @@
 .differences__list {
   margin: 0;
   padding-top: 25px;
+  padding-left: 20px;
 }
 .differences__item {
   display: flex;
@@ -85,27 +86,38 @@
   margin-bottom: 22px;
 }
 @media (max-width: 1100px) {
+  .differences {
+    padding-top: 55px;
+    padding-bottom: 10px;
+  }
   .differences__block {
     margin-top: 40px;
   }
   .differences__item {
     flex-direction: column;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 7px;
+    margin-bottom: 40px;
   }
   .differences__col {
     text-align: center;
     margin-bottom: 32px;
+    padding-right: 0;
+    line-height: 1.3;
   }
   .differences__col:first-child {
     width: 100%;
     flex: 1 1 auto;
   }
+  .differences__item--2-col .differences__col:first-child {
+    margin-bottom: 15px;
+  }
   .differences__thesis {
-    width: auto;
+    max-width: none;
+    font-size: 18px;
   }
   .differences__counter {
-    font-size: 36px;
+    font-size: 34px;
     line-height: 120%;
   }
   .differences__col-title {
@@ -115,13 +127,25 @@
   }
   .differences__notes {
     margin: 12px auto 0;
-    padding-top: 12px;
+    padding: 12px 30px 0;
+    max-width: none;
+    font-size: 12px;
+    line-height: 120%;
   }
   .differences__text {
     margin-bottom: 32px;
+    font-size: 16px;
+    line-height: 130%;
   }
   .differences__list {
     text-align: left;
+    padding-top: 0;
+    padding-left: 0;
+    font-size: 14px;
+    line-height: 130%;
+  }
+  .differences__list li {
+    margin-bottom: 10px;
   }
 }
 

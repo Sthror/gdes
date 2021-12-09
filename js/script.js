@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function(){
   const navbar = document.querySelector('.navbar');
 
   function navbarScrolling(){
-    if(window.pageYOffset > 200){
+    if(window.pageYOffset > 50){
       navbar.classList.add('scrolling');
     } else {
       navbar.classList.remove('scrolling');
